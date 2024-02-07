@@ -10,14 +10,6 @@ body {
   overflow: hidden; /* Hide overflow to prevent scrollbars */
 }
 
-/* Header styling */
-header {
-  background-color: rgba(218, 33, 33, 0.33);
-  /* Use a semi-transparent color to make text more readable */
-  padding: 20px;
-  text-align: center;
-}
-
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
@@ -44,6 +36,14 @@ header {
 .topnav a.active {
   background-color: #04AA6D;
   color: white;
+}
+
+/* Header styling */
+header {
+  background-color: rgba(218, 33, 33, 0.33);
+  /* Use a semi-transparent color to make text more readable */
+  padding: 20px;
+  text-align: center;
 }
 
 /* Section styling */

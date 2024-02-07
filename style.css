@@ -1,64 +1,79 @@
-__________________________________________________________________________________________
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Website</title>
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow: hidden; /* Hide overflow to prevent scrollbars */
+    }
+
+    #bgVideo {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1; /* Place the video behind other content */
+    }
+
+    header {
+      background-color: rgba(218, 33, 33, 0.33);
+      /* Use a semi-transparent color to make text more readable */
+      padding: 20px;
+      text-align: center;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(70, 173, 98, 0.7);
+      /* Semi-transparent white background for content */
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2 {
+      color: #235c25;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: rgba(51, 51, 51, 0.9);
+      /* Semi-transparent dark background for footer */
+    }
+  </style>
 </head>
+<body>
 
-body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  overflow: hidden; /* Hide overflow to prevent scrollbars */
-}
-
-#bgVideo {
-  position: fixed;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -1; /* Place the video behind other content */
-}
 <video autoplay loop muted id="bgVideo">
   <source src="your-video-file.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
-header {
-  background-color: rgba(218, 33, 33, 0.33);
-  /* Use a semi-transparent color to make text more readable */
-  padding: 20px;
-  text-align: center;
-}
+<header>
+  <h1>Welcome to Your Website</h1>
+  <p>This is the header section of your website.</p>
+</header>
 
-section {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: rgba(70, 173, 98);
-  /* Semi-transparent white background for content */
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+<section>
+  <h2>About Us</h2>
+  <p>This is the section content of your website. You can write about your company or organization here.</p>
+</section>
 
-h1, h2 {
-  color: #235c25;
-}
+<footer>
+  <p>&copy; 2024 Your Website. All rights reserved.</p>
+</footer>
 
-p {
-  line-height: 1.6;
-}
-
-footer {
-  text-align: center;
-  padding: 10px;
-  background-color: rgba(51, 51, 51, 0.9);
-  /* Semi-transparent dark background for footer */
-}
 </body>
 </html>
-

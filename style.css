@@ -12,15 +12,6 @@
       overflow: hidden; /* Hide overflow to prevent scrollbars */
     }
 
-    #bgVideo {
-      position: fixed;
-      top: 0;
-      left: 0;
-      min-width: 100%;
-      min-height: 100%;
-      z-index: -1; /* Place the video behind other content */
-    }
-
     header {
       background-color: rgba(218, 33, 33, 0.33);
       /* Use a semi-transparent color to make text more readable */
@@ -55,12 +46,6 @@
   </style>
 </head>
 <body>
-
-<video autoplay loop muted id="bgVideo">
-  <source src="pexels-anthony-shkraba-8064152 (Original).mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
 <header>
   <h1>Welcome to Your Website</h1>
   <p>This is the header section of your website.</p>

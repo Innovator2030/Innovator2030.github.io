@@ -10,7 +10,7 @@ body {
 }
 
 header {
-  background-color: rgba(218, 33, 33, 33);
+  background-color: rgba(218, 33, 33, 0.33);
   /* Use a semi-transparent color to make text more readable */
   padding: 20px;
   text-align: center;

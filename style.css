@@ -1,100 +1,198 @@
-/* Reset default browser styles */
-html, body {
+*{
   margin: 0;
   padding: 0;
-  height: 100%;
+  box-sizing: border-box;
 }
-
-body {
-  font-family: Arial, sans-serif;
-  overflow: hidden; /* Hide overflow to prevent scrollbars */
+.banner{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.40));
+  background-position: center;
+  background-size: center;
 }
-
-/* Add a black background color to the top navigation */
-.topnav {
-  background-color: #333;
-  overflow: hidden;
+.navbar{
+  width: 90%;
+  padding: 30px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
+.logo{
+  width: 160px;
+  margin-top: -10px;
+  cursor: pointer;
+}
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 20px;
+}
+.navbar ul li a{
   text-decoration: none;
-  font-size: 17px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+  font-family:monospace;
+  padding: 15px;
 }
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
+li a:hover{
+  background: white;
+  transition: 0.6s;
+}
+.navbar a:hover{
   color: black;
 }
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #04AA6D;
+.content{
+  width: 100%;
+  font-family:'Courier New';
+  font-weight: 600px;
+  position: absolute;
+  color: white;
+  top: 45%;
+  transform: translateY(-50%);
+  text-align: left;
+}
+.content h1{
+  margin-top: 80px;
+  margin-left: 10vh;
+  font-size: 90px;
+  font-weight: 800;
+}
+button{
+  width: 200px;
+  padding: 15px;
+  margin: 20px 5px;
+  margin-left: 10vh;
+  text-align: center;
+  border-radius: 25px;
+  color: black;
+  border: 2px;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+button:hover{
+  background: rgb(0, 192, 226);
+  transition: 0.5s;
+}
+button:hover{
   color: white;
 }
-
-/* Header styling */
-header {
-  background-color: rgba(218, 33, 33, 0.33);
-  /* Use a semi-transparent color to make text more readable */
-  padding: 20px;
-  text-align: center;
-}
-
-/* Section styling */
-section {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: rgba(70, 173, 98, 0.7);
-  /* Semi-transparent white background for content */
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Heading styling */
-h1, h2 {
-  color: #235c25;
-}
-
-/* Paragraph styling */
-p {
-  line-height: 1.6;
-}
-
-/* Footer styling */
-footer {
-  text-align: center;
-  padding: 10px;
-  background-color: rgba(51, 51, 51, 0.9);
-  /* Semi-transparent dark background for footer */
-}
-
-/* Video container styling */
-.video-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  z-index: -1; /* Ensure the video stays behind other content */
-}
-
-/* Video styling */
-.video-container video {
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
+.banner video{
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  right: 0;
+  bottom: 0;
   z-index: -1;
 }
+@media(min-aspect-ratio: 16/9){
+  .banner video{
+      width: 100%;
+      height: auto;
+  }
+}
+
+.container {
+  width: 90%;
+  height: 0%;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  padding-top: 30%;
+  border-radius: 100px;
+  border-color: aquamarine;
+  flex-basis: 31%;
+  background:#ffffff;
+  border-radius: 10px;
+  margin-bottom: 10%;
+  padding: 50px 12px;
+  box-sizing: border-box;
+  position: relative;
+  top: 70px
+  
+}
+
+h1{
+  font-size: 70px;
+  font-weight: 600px;
+  font-family: Cambria;
+}
+
+h2{
+  font-size: 35px;
+  font-weight: 600px;
+  font-family: Cambria;
+}
+
+p{
+  color:#000000;
+  font-family: 'Courier New';
+  font-size: 35px;
+  font-weight: 00px;
+  line-height: 50px;
+  padding: 10px
+
+}
+
+.container-row{
+  display: flex;
+  width: 1263px;
+  height: 375px;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  padding-top: 80%;
+  flex-basis: 31%;
+  background: #62b78a;
+  margin-bottom: 10vh;
+  padding: 90px 12px;
+  box-sizing: border-box;
+  position: relative;
+  top: 200px;
+  transform: translateY(-20%);
+  left: -70px;
+}
+
+.container-row .hero-image{
+  flex: 1;
+  width: 50% ;
+  height: 100%;
+  margin-left: -2vh;
+  margin-top: -35.5vh;
+  margin-bottom: -3vh;
+}
+
+.container-row .A3L_Slogan {
+  flex: 2;
+  width: 50%; 
+  text-align: left;
+}
+
+.A3L_Slogan{
+  font-size:50px;
+  font-weight:1500px;
+  font-family:Georgia;
+  text-align: right;
+  margin-left:13vh;
+  margin-bottom: 17vh
+}
+
+.slogan_catchphrase{
+  font-size: 20px;
+  font-weight: 100px;
+  font-family:'Courier New';
+  text-align: left;
+  margin-left: 0vh;
+  line-height: 60px;
+
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: rgb(174, 248, 192);
+  color: white;
+  line-height: 5px;
+}
+
+

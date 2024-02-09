@@ -1,191 +1,205 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.banner{
-  width: 100%;
-  height: 100vh;
-  background-image: linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.40));
-  background-position: center;
-  background-size: center;
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40));
+    background-position: center;
+    background-size: center;
 }
-.navbar{
-  width: 90%;
-  padding: 30px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+
+.navbar {
+    width: 90%;
+    padding: 30px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-.logo{
-  width: 160px;
-  margin-top: -10px;
-  cursor: pointer;
+
+.logo {
+    width: 160px;
+    margin-top: -10px;
+    cursor: pointer;
 }
-.navbar ul li{
-  list-style: none;
-  display: inline-block;
-  margin: 20px;
+
+.navbar ul {
+    list-style: none;
+    display: flex;
 }
-.navbar ul li a{
-  text-decoration: none;
-  text-transform: uppercase;
-  color: white;
-  font-weight: 600;
-  font-family:monospace;
-  padding: 15px;
+
+.navbar ul li {
+    margin: 0 20px;
 }
-li a:hover{
-  background: white;
-  transition: 0.6s;
+
+.navbar ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    font-family: monospace;
+    padding: 15px;
+    transition: background 0.6s, color 0.6s; /* Added transition */
 }
-.navbar a:hover{
-  color: black;
+
+.navbar ul li a:hover {
+    background: white;
+    color: black;
 }
-.content{
-  width: 100%;
-  font-family:'Courier New';
-  font-weight: 600px;
-  position: absolute;
-  color: white;
-  top: 45%;
-  transform: translateY(-50%);
-  text-align: left;
+
+.content {
+    width: 100%;
+    font-family: 'Courier New';
+    font-weight: 600px;
+    position: absolute;
+    color: white;
+    top: 45%;
+    transform: translateY(-50%);
+    text-align: left;
 }
-.content h1{
-  margin-top: 80px;
-  margin-left: 10vh;
-  font-size: 90px;
-  font-weight: 800;
+
+.content h1 {
+    margin-top: 80px;
+    margin-left: 10vh;
+    font-size: 90px;
+    font-weight: 800;
 }
-button{
-  width: 200px;
-  padding: 15px;
-  margin: 20px 5px;
-  margin-left: 10vh;
-  text-align: center;
-  border-radius: 25px;
-  color: black;
-  border: 2px;
-  font-size: 20px;
-  cursor: pointer;
-  font-weight: 600;
+
+button {
+    width: 200px;
+    padding: 15px;
+    margin: 20px 5px;
+    margin-left: 10vh;
+    text-align: center;
+    border-radius: 25px;
+    color: black;
+    border: 2px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: transparent; /* Added */
+    transition: background 0.5s, color 0.5s; /* Added */
 }
-button:hover{
-  background: rgb(0, 192, 226);
-  transition: 0.5s;
+
+button:hover {
+    background: rgb(0, 192, 226);
+    color: white;
 }
-button:hover{
-  color: white;
+
+.banner video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
 }
-.banner video{
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-}
-@media(min-aspect-ratio: 16/9){
-  .banner video{
-      width: 100%;
-      height: auto;
-  }
+
+@media (min-aspect-ratio: 16/9) {
+    .banner video {
+        width: 100%;
+        height: auto;
+    }
 }
 
 .container {
-  width: 90%;
-  height: 0%;
-  margin: auto;
-  align-items: center;
-  text-align: center;
-  padding-top: 30%;
-  border-radius: 100px;
-  border-color: aquamarine;
-  flex-basis: 31%;
-  background:#ffffff;
-  border-radius: 10px;
-  margin-bottom: 10%;
-  padding: 50px 12px;
-  box-sizing: border-box;
-  position: relative;
-  top: 70px
-  
+    width: 90%;
+    height: 0%;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    padding-top: 30%;
+    border-radius: 100px;
+    border-color: aquamarine;
+    flex-basis: 31%;
+    background: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 10%;
+    padding: 50px 12px;
+    box-sizing: border-box;
+    position: relative;
+    top: 70px;
 }
 
-h1{
-  font-size: 70px;
-  font-weight: 600px;
-  font-family: Cambria;
+h1 {
+    font-size: 70px;
+    font-weight: 600px;
+    font-family: Cambria;
 }
 
-h2{
-  font-size: 35px;
-  font-weight: 600px;
-  font-family: Cambria;
+h2 {
+    font-size: 35px;
+    font-weight: 600px;
+    font-family: Cambria;
 }
 
-p{
-  color:#000000;
-  font-family: 'Courier New';
-  font-size: 35px;
-  font-weight: 00px;
-  line-height: 50px;
-  padding: 10px
-
+p {
+    color: #000000;
+    font-family: 'Courier New';
+    font-size: 35px;
+    font-weight: 00px;
+    line-height: 50px;
+    padding: 10px;
 }
 
-.container-row{
-  display: flex;
-  width: 1248px;
-  height: 375px;
-  margin: auto;
-  align-items: center;
-  text-align: center;
-  padding-top: 80%;
-  flex-basis: 31%;
-  background: #62b78a;
-  margin-bottom: 10vh;
-  padding: 90px 12px;
-  box-sizing: border-box;
-  position: relative;
-  top: 200px;
-  transform: translateY(-20%);
-  left: -70px;
+.container-row {
+    display: flex;
+    width: 1248px;
+    height: 375px;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    padding-top: 80%;
+    flex-basis: 31%;
+    background: #62b78a;
+    margin-bottom: 10vh;
+    padding: 90px 12px;
+    box-sizing: border-box;
+    position: relative;
+    top: 200px;
+    transform: translateY(-20%);
+    left: -70px;
 }
 
-.container-row .hero-image{
-  flex: 1;
-  width: 50% ;
-  height: 100%;
-  margin-left: -2vh;
-  margin-top: -35.5vh;
-  margin-bottom: -3vh;
+.container-row .hero-image {
+    flex: 1;
+    width: 50%;
+    height: 100%;
+    margin-left: -2vh;
+    margin-top: -35.5vh;
+    margin-bottom: -3vh;
 }
 
 .container-row .A3L_Slogan {
-  flex: 2;
-  width: 50%; 
-  text-align: left;
+    flex: 2;
+    width: 50%;
+    text-align: left;
 }
 
-.A3L_Slogan{
-  font-size:50px;
-  font-weight:1500px;
-  font-family:Georgia;
-  text-align: right;
-  margin-left:13vh;
-  margin-bottom: 17vh
+.A3L_Slogan {
+    font-size: 50px;
+    font-weight: 1500px;
+    font-family: Georgia;
+    text-align: right;
+    margin-left: 13vh;
+    margin-bottom: 17vh;
 }
 
-.slogan_catchphrase{
-  font-size: 20px;
-  font-weight: 100px;
-  font-family:'Courier New';
-  text-align: left;
-  margin-left: 0vh;
-  line-height: 60px;
-
+.slogan_catchphrase {
+    font-size: 20px;
+    font-weight: 100px;
+    font-family: 'Courier New';
+    text-align: left;
+    margin-left: 0vh;
+    line-height: 60px;
 }
 
-
-
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(174, 248, 192);
+    color: white;
+    line-height: 5px;
+}

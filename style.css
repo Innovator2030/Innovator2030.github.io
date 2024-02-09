@@ -136,7 +136,7 @@ p{
 
 .container-row{
   display: flex;
-  width: 1257px;
+  width: 1250px;
   height: 375px;
   margin: auto;
   align-items: center;
@@ -187,12 +187,5 @@ p{
 
 }
 
-footer {
-  text-align: center;
-  padding: 3px;
-  background-color: rgb(174, 248, 192);
-  color: white;
-  line-height: 5px;
-}
 
 
